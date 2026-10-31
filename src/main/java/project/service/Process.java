@@ -38,7 +38,7 @@ public class Process {
 
     private void callHistory() {
         System.out.println("Выводим историю ввода...");
-        String[] output = null;
+        String[] output;
         try {
             output = stringBuilder.getHistoryAsArray();
         } catch (Exception e) {
@@ -50,7 +50,7 @@ public class Process {
 
     private void callGetString() {
         System.out.println("Выводим строку...");
-        String output = "";
+        String output;
         try {
             output = stringBuilder.getStringValue();
         } catch (Exception e) {
